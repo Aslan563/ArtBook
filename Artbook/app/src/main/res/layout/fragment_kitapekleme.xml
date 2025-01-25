@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kitapekleme"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/selectimagecamera"
+        android:layout_width="47dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:onClick="openCamera"
+        android:src="@drawable/camera"
+        app:flow_horizontalAlign="center"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="28dp"></ImageView>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/selectbook"
+        android:layout_width="186dp"
+        android:layout_height="174dp"
+        android:src="@drawable/selectimage"
+        android:onClick="selectimage"
+        app:flow_horizontalAlign="center"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="28dp"></ImageView>
+
+    <EditText
+        android:id="@+id/bookname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Kitap ismi"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="343dp"
+        android:layout_marginTop="20dp"></EditText>
+
+    <Button
+        android:id="@+id/addbutun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addbook"
+        android:text="EKLE"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="443dp"
+        android:layout_marginTop="20dp"></Button>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="SİL"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="443dp"
+        android:layout_marginTop="20dp"></Button>
+</LinearLayout>

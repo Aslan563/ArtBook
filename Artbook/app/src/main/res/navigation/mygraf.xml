@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mygraf"
+    app:startDestination="@id/listfragment">
+
+    <fragment
+        android:id="@+id/listfragment"
+        android:name="com.example.artbook.listfragment"
+        android:label="fragment_listfragment"
+        tools:layout="@layout/fragment_listfragment" >
+        <action
+            android:id="@+id/action_listfragment_to_kitapekleme"
+            app:destination="@id/kitapekleme" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitapekleme"
+        android:name="com.example.artbook.kitapekleme"
+        android:label="fragment_kitapekleme"
+        tools:layout="@layout/fragment_kitapekleme" >
+        <action
+            android:id="@+id/action_kitapekleme_to_listfragment"
+            app:destination="@id/listfragment" />
+        <argument android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="info"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+
+    </fragment>
+</navigation>
